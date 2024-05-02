@@ -261,7 +261,9 @@ header .wrapper ul li:last-child a{
 	#home .wrapper .left p{
 	 font-size: small;
 	}
-
+	#home .wrapper .left .left-section{
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width:375px) {
