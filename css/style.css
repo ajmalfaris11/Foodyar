@@ -38,7 +38,8 @@ header .wrapper{
 }
 header .wrapper h1 img{
 	width: 120px;
-	transition: transform 0.5s ease-in-out;}
+	transition: transform 0.5s ease-in-out;
+}
 
 header .wrapper h1 img:hover{
 	transform: scale(1.1);
@@ -108,6 +109,80 @@ header .wrapper ul li:last-child a{
 
 
 
+#home{
+	padding: 60px 0;
+}
+
+#home .wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+#home .wrapper .left{
+	width: 48%;
+	align-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#home .wrapper .left .left-section{
+	width: 80%;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+
+#home .wrapper .left h1{
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 32px;
+}
+#home .wrapper .left h1 span{
+	font-weight: 800;
+}
+
+
+#home .wrapper .left p{
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 40px;
+	color: rgb(121, 121, 121);
+}
+
+#home .wrapper .left a{
+	width: 160px;
+	text-align: center;
+	font-weight: 600;
+	padding: 10px 20px;
+	background-color: #F7C531;
+	border-radius: 25px 25px 10px 10px ;
+	margin-top: 10px;
+}
+
+#home .wrapper .right{
+	width: 48%;
+}
+
+#home .wrapper .right img{
+	width: 90%;
+	transition: transform 0.5s ease-in-out;
+
+}
+
+#home .wrapper .right img:hover{
+	transform: scale(1.02);
+}
+
+
+#smImg{
+	margin-block: 30px;
+	width: 100%;
+}
+
+
+
+
 /* ===== MEDIA QUERIES ===== MEDIA QUERIES ===== MEDIA QUERIES =====  */
 
 
@@ -117,6 +192,12 @@ header .wrapper ul li:last-child a{
 		display: block;
 	}
 	
+	#smImg{
+		display: none;
+	}
+	#home .wrapper .right img{
+		display: block;
+	} 
 
   }
 
@@ -129,9 +210,35 @@ header .wrapper ul li:last-child a{
 		width: 150px;
 	}
 
-	header .wrapper h1 img{
+	header .wrapper h1{
 		margin-left: 50px;
 
+	}
+
+	#home{
+		padding: 30px 0;
+		text-align: center;
+	} 
+
+	#home .wrapper .left{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	#home .wrapper .right{
+		display: none;
+	}
+
+	#home .wrapper .left h1{
+		font-size: 50px;
+		margin-bottom: 20px;
+	}
+
+	#home .wrapper .left img{
+		width: 100%;
 	}
 
 }
@@ -146,7 +253,24 @@ header .wrapper ul li:last-child a{
 		padding-top: 20px;
 	}
 
+	#home .wrapper .left h1{
+		font-size: 36px;
+		margin-bottom: 20px;
 	}
+ 
+	#home .wrapper .left p{
+	 font-size: small;
+	}
+
+}
+
+@media only screen and (max-width:375px) {
+	#home .wrapper .left h1{
+		font-size: 28px;
+		margin-bottom: 14px;
+	}
+
+ }
 
 @media only screen and (max-width: 900px) {
 	header .wrapper ul li:not(:last-child) {
