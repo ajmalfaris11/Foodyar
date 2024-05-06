@@ -17,6 +17,10 @@ Foodyaar aims to provide a user-friendly platform for individuals interested in 
 - **User-Friendly Interface:** A clean and intuitive design ensures a pleasant browsing experience for users of all skill levels.
 - **Mobile Compatibility:** Ensuring optimal performance and usability across various devices, including smartphones and tablets.
 
+## Preview
+
+![Foodyar Page Preview](images/FoodyarPoster.png)
+
 
 ## Getting Started
 
